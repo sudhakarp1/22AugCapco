@@ -1,0 +1,254 @@
+Python:
+------
+	Easy to learn language
+	
+	data = 10
+	data = 123.345
+	data ='Strings You can Assign to'
+	data = "double quotes"
+	data = ''' 
+			Triple Quotes 
+			
+			'''
+	
+	data = """ Triple
+		quotes given
+		in multiple
+		lines
+		"""
+		
+	
+	
+	data = True
+		False
+----------------------------------------------------
+Python is case sensitive:
+	It differentiates upper and lower casses 
+	
+	AA = 10
+	aA = 20
+	Aa = 30
+	aa = 40
+
+	Python language identifies your scripts scope with indentation 
+	
+Operators:
+---------
+	Arithmetic: +, -, *, / , %, //(integer), **(Power)
+	Relational:  <, >, <=, >=, ==, !=
+	Logical: and, or, not 
+	Bitwise: &, |, ~, ^, <<, >>
+	tertial/ternary: True if cond else False
+	
+	Integer:
+	--------
+		Whole numbers with out any decimal values.
+		
+		int(string) --> convers given string to integer assuming integer as decimal value (base 10)
+
+		int(string, base) --> convers given string to integer You can give different base value ( other than base 10)
+		
+	Decimal (Base 10):
+		0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,...
+	
+	Octal (Base 8):
+		0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, ...
+	
+	Hexa Decimal(Base 16):
+	----------------------
+		0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, 10, 11, 12, ....
+		
+	Binary (Base 2):
+	----------------
+		0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 
+		
+	Functions than can covert integer data:
+
+		oct(num), hex(num), bin(num)
+		
+	or 
+		while assigning values you can pre-fix with
+	0x --> Hexa Decimal, 0o --> Octal , 0b --> Binary
+	var = 0x12abc
+	var = 0b1011
+==========================================================
+Control Structures:
+-------------------
+	3 Statements involved in problem solving 
+		1. Sequential statements 
+		2. Conditional / Branching 
+		3. Iterative/Looping
+
+	if Cond: 
+		statements here 
+		statements here 
+		
+	if Cond:
+		statements here 
+		statements here 
+	else:
+		statements here 
+		statements here 
+
+	if Cond:
+		statements here 
+		statements here 
+	elif Cond:
+		statements here 
+		statements here 
+	elif Cond:
+		statements here 
+		statements here 
+	else:
+		statements here 
+		statements here 		
+	
+		
+if cond:
+	statement here 
+	statement here 
+	if cond:
+		statement here
+	    statement here
+		
+statement here 
+
+	Suffix:
+		1 --> 1st
+		2 --> 2nd
+		3 --> 3rd
+		19 --> 19th 	
+-------------------------------------------------
+1, 21, 31, ... 101, 131, 141, ... --> st not 11, 111, 211
+2, 22, 32, ... 102, 132, 142, ... --> nd not 12, 112, 212
+3, 23, 33, ... 103, 133, 143, ... --> nd not 13, 113, 213
+else ---> th 
+-------------------------------------
+Iterative/Looping:
+------------------
+	for var in Collection:
+		statements here 
+	
+	for i in 1, 2, 3, 4, 5, 6,7, 8, 9, 10:
+		print(i, end=' ')
+	
+	for i in range(1, 11):
+		print(i, end=' ')
+
+
+	Traditional loop construct:
+	
+		cnt = 0
+		while cnt <= 10:
+			print(cnt, end=' ')
+			cnt+=1
+
+Builtin Data Structures:
+------------------------
+	List --> [1, 2, 3, 4, 5, 6]
+	Tuple --> (1, 2, 3, 4, 5, 6)
+	Set  --> {1, 2, 3, 4, 5, 6}
+	Dictionary --> {1:'one', 2:'two', 3:'three', 4:'four', 5: 'five', 6:'six'}
+
+	lst = [1, 2, 3, 4, 5, 6]
+	lst[0] += 10
+	[11, 2, 3, 4, 5, 6]
+	
+	
+	st = {'a', 'b','name','dict'}
+	
+	strOne = 'String here'
+	strTwo = 'P' + strOne[1:]
+=======================================================
+var = [10,20,30,40,50]
+varOne = var #
+
+	referenced
+	shallow copy
+	deep copy 
+	
+
+def funOne(var):
+	pass
+	
+	
+funOne(var)
+============================================
+
+mat =  []
+//implement the logic to fill the matrix of 3 X 5 
+mat = [ 
+  [10,20,30,40,50],
+  [100,200,300,400, 500],
+  [1000,2000,3000,4000,5000]
+]
+Most commonly used functions in list:
+-------------------------------------
+	1.  len(lst)
+	2.  lst.copy() #shallow copy
+	3.  lst.append(val)
+	4.  lst.insert(pos, val)
+	5.  lst.extend(newLst)
+	6.  lst.sort() #performs inplace sorting
+	7.  lst.remove(val)
+	8.  lst.pop([last])
+	9.  lst.clear() #all elements in lst is cleared/removed
+	10. lst.index(val) #returns position of val 
+-------------------------------------------------------
+Dictionary:
+-----------
+	uses key:value pair 
+
+ get(key[, default])  Returns value or default
+ keys()               Returns view of keys
+ values()             Returns view of values
+ items()              Returns (key, value) pairs
+ update(dict2)        Updates with another dict
+ pop(key[, default])  Removes key, returns value
+ popitem()            Removes and returns last (key, value)
+ clear()              Removes all items
+ copy()               Shallow copy 
+ setdefault(k, v)     Returns value if key exists, else sets to v	
+
+	word2Num:
+		ninety eight crore ...
+
+	words = {'one': 1, ... 'twenty': 20, 'thirty': 30, 'foty': 40, ... 'hundred': 100, 'thousand': 1000, 'lakhs': 100000, 'crores': 10000000} 
+
+============================================
+	lst = [10,20,30,40,20,30,40]
+	newLst = list(set(lst))
+	print(lst)
+	print(newLst)
+===============================================
+num = 1001110
+set(str(num))  var --> {0, 1}
+--> var is {0,1} or {0} or {1} 
+==================================================
+Functions in Python:
+--------------------
+	def funOne(): #defining /definition 
+		statements here 
+		statements here 
+		
+	funOne() #calling / invoking / using
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
