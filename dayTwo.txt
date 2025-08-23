@@ -1,0 +1,117 @@
+Strings:
+--------
+commonly used methods of str class:
+----------------------------------
+	st.split()  ==> split string into a list of words by default.
+	st.join(list) --> joins list into a string with st as separator.
+	
+	st.lower()  --> converts to lowercase
+	st.upper()  --> converts to uppercase
+	st.strip()  --> removes whitespace at the begining and end of the given string 
+	st.find(sub) --> find and print the index of the sub string in the string [ returns -1 if not found ]
+	st.replace(a, b) --> find sub-string 'a' and replace with 'b' in the given string 
+	st.count(sub) --> counts the occurrence of sub-string sub 
+======================================================
+
+Functions - Syntax, Arguments, Keyword Arguments, Return Values 
+	• Function Parameters 
+	• Global Variables 
+	• Variable Scope and Returning Values 
+	• Lambda - Features, Syntax, Options, Compared with the Functions 
+==========================================================
+Defining Functions:
+------------------
+
+def funName(a, b, c):
+	pass 
+	
+funName(10,20, 30)
+funName('A','Some', 30)
+
+funName(('A','Some', 30), 200, 300)
+=======================================================
+Unpacking:
+-----------
+a, b, c = 10, 20, 30
+	
+a, b, c = 10, 20, 30, 40, 50, 60
+	
+Lambda:
+-------
+	map(fun, collection)
+	filter(fun, collection) --> based on Condition
+	reduce(fun, collection)--> return single result
+--------------------------------------------------------
+Next Topic:
+-----------
+	Understand Python Standard Libraries 
+		• Packages and Module - Modules, Import Options, sys Path
+	Modules(User Defined) Used in Python 
+		• The Import Statements 
+		• Module Search Path 
+		• Package Installation Ways 
+=========================================================
+	Every Python file (consisting data(global), function definition and class definition) is referred to as a module.
+
+	In the given example I am just using functions and global data. Since we have not discussed OOP I will not introduce classes inside my module for the time being.	
+=======================================================
+Object Oriented Programming Concepts:
+-------------------------------------
+	class Name:
+		data = 10 #class data 
+		def methodOne(self):
+			print()
+			
+		def methodTwo(self, a, b, *arg, **kwargs):
+			pass 
+		
+
+	obj = Name()		
+	a = Name()
+	
+	obj.methodOne()
+	obj.methodTwo(10,20)
+	
+	a.methodOne()
+	a.methodTwo(100,200)
+	
+============================================
+Even though we talk about encapsulation, In Normal OOP language we use keywords like private, protected to achieve this. 
+
+We do not have such provision in Python. But to enact the principle we do use certain naming convention.
+
+	If your data or method's name starts with (double underscore)
+		__var 
+		__method(self, *args)
+		
+	It tries to achieve or mimic private member of the class 
+	
+	If your data or method's name starts with (single underscore)
+		_var 
+		_method(self, *args)
+		
+	It tries to achieve or mimic protected member of the class 	
+=====================================================
+	class Name:
+		data = 10 #class data 
+		def methodOne(self): #instance method 
+			self.dataOne = 100 #instance data 
+			print()
+			
+		def methodTwo(self, a, b, *arg, **kwargs):
+			pass
+	
+
+	a = Name()
+	b = Name() 
+
+	print(f'Class data: {Name.data}') 
+
+
+
+
+
+
+	
+
+	
