@@ -1,0 +1,118 @@
+NumPy:
+------
+What is NumPy?
+	--> NumPy is a Python library used for working with arrays.
+	--> It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+	--> NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely.
+	--> NumPy stands for Numerical Python.
+---------------------------------------
+	NumPy is the fundamental package for numerical computations in Python. 
+	It provides support for:
+	--> 	Large, multi-dimensional arrays and matrices
+	--> 	Mathematical functions to operate on these arrays efficiently
+
+	Key Features
+	--> 	Powerful n-dimensional array object (ndarray)
+	--> 	Tools for integrating C/C++
+	--> 	Mathematical and logical operations
+	--> 	Linear algebra, Fourier transform, and random number generation
+-------------------------------------------------------
+Why is NumPy Faster Than Lists?
+-------------------------------
+	NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
+
+	This behavior is called locality of reference in computer science.
+
+	This is the main reason why NumPy is faster than lists. Also it is optimized to work with latest CPU architectures.
+
+
+Basic Array Operations:
+-----------------------
+	import numpy as np
+
+	# Create 1D and 2D arrays
+	a = np.array([1, 2, 3])
+	b = np.array([[1, 2,5], [3, 4, 10]])
+
+	# Arithmetic operations
+	print(a + 10)         # [11 12 13]
+	print(b * 2)          # [[2 4 10], [6 8 20]]
+
+	# Matrix multiplication
+	c = np.array([[5, 6], [7, 8]])
+	print(np.dot(b, c))   # [[19 22], [43 50]]
+
+Array Manipulations and Statistics:
+-----------------------------------
+	# Random array and reshaping
+	x = np.random.rand(3, 4)
+	print('Original:\n', x)
+	print('Mean:', np.mean(x))
+	print('Transposed:\n', x.T)
+=========================================================
+Create a NumPy ndarray Object
+	NumPy is used to work with arrays. The array object in NumPy is called ndarray.
+
+We can create a NumPy ndarray object by using the array() function.
+
+import numpy as np
+
+a = np.array(42) #0 dim 
+b = np.array([1, 2, 3, 4, 5]) #1 dim 
+c = np.array([[1, 2, 3], [4, 5, 6]]) #2 dim 
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]) #3 dim 
+
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
+
+=================================================
+NumPy Array Indexing:
+	arr = np.array([1, 2, 3, 4])
+	print(arr[1])
+
+	arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+	print('2nd element on 1st row: ', arr[0, 1])
+
+	arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+	print(arr[0, 1, 2])
+
+NumPy Array Slicing:
+	arr = np.array([1, 2, 3, 4, 5, 6, 7])
+	print(arr[1:5])
+	
+	arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+	print(arr[0:2, 1:4])
+	
+NumPy Data Types:
+
+Data Types in Python
+--------------------
+	By default Python have these data types:
+
+	strings - used to represent text data, the text is given under quote marks. e.g. "ABCD"
+	integer - used to represent integer numbers. e.g. -1, -2, -3
+	float - used to represent real numbers. e.g. 1.2, 42.42
+	boolean - used to represent True or False.
+	complex - used to represent complex numbers. e.g. 1.0 + 2.0j, 1.5 + 2.5j
+
+Data Types in NumPy:
+--------------------
+	Below is a list of all data types in NumPy and the characters used to represent them.
+
+	i - integer
+	b - boolean
+	u - unsigned integer
+	f - float
+	c - complex float
+	m - timedelta
+	M - datetime
+	O - object
+	S - string
+	U - unicode string
+	V - fixed chunk of memory for other type ( void )
+	
+arr = np.array([1, 2, 3, 4], dtype='S')
+print(arr)
+print(arr.dtype)
