@@ -1,0 +1,64 @@
+Day 3:
+------
+	Object Oriented Concepts (Continues...)
+	Errors and Exceptions - Types of Issues, Remediation
+	Errors and Exception Handling
+	Handling Multiple Exceptions
+	
+Module 4:
+---------
+ Introduction to NumPy, Pandas and Matplotlib 
+	• Create arrays using NumPy 
+	• Perform various operations on arrays and manipulate them 
+	• Indexing slicing and iterating 
+	• Read & write data from text/CSV files into arrays and vice-versa 
+	• Create Series and Data Frames in Pandas 
+	• Data structures & index operations in pandas 
+	• Importing and exporting data 
+	• Indexing and slicing of data structures in pandas 
+	• Reading and Writing data from Excel/CSV formats into Pandas • Create simple plots in matplotlib 
+	• Grids, axes, plots, Markers, colours, fonts and styling 
+	• Types of plots - bar graphs, pie charts, histograms, Contour plots
+=====================================================
+class className:
+	data = 10 #class data 
+
+class Employee:
+	_companyName = 'Capco Technologies Pvt Ltd.'
+	def __init__(self, id, name, doj):
+		self.id, self.name, self.doj = id, name, doj 
+	
+	@classmethod
+	def getCompanyName(cls):
+		return cls._companyName()
+		
+	@staticmethod
+	def someMethod():
+		print(f'SomeMethod() called')
+
+	Errors and Exceptions - Types of Issues, Remediation
+	----------------------
+
+	Errors and Exception Handling:
+	------------------------------
+		For handling exceptions, we put the code that might generate(raise) an exception with in try: except: block		
+		
+	Handling Multiple Exceptions
+
+Using External Packages:
+------------------------
+	pymysql - driver to connect to Mysql
+	oracle	- cx_oracle
+	postgres - psycopg2
+	sqlserver - pyodbc
+------------------------
+Introduction to NumPy, Pandas and Matplotlib
+-------------------------
+	pip install numpy pandas matplotlib openai
+=======================================================
+Introduction to NumPy:
+----------------------
+Introduction to pandas 
+
+
+
